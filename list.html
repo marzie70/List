@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>list</title>
+
+    <style>
+        body {
+            background-image: url(https://www.foroshgostar.com/content/images/thumbs/0001257_800.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 12px;
+            direction: rtl;
+        }
+
+        #vertical-nav {
+            width: 150px;
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 12px;
+            direction: rtl;
+            text-align: center;
+        }
+
+        #vertical-nav ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #vertical-nav li {
+            list-style: none;
+        }
+
+        #vertical-nav a {
+            color: rgb(255, 255, 255);
+            display: block;
+            height: 40px;
+            line-height: 35px;
+            text-decoration: none;
+            width: 100%;
+        }
+
+        #vertical-nav li:hover {
+            background-color: rgb(59, 83, 61);
+            position: relative;
+        }
+
+        ul.vertical-top-level {
+            background-color: rgb(27, 83, 88);
+        }
+
+        ul.vertical-top-level li {
+            border-bottom: rgb(152, 201, 19) solid 1px;
+        }
+
+        ul.vertical-sub-level {
+            display: none;
+        }
+
+        ul.vertical-sub-level li {
+            border: none;
+            float: right;
+            width: 150px;
+            border-bottom: rgb(152, 201, 19) solid 1px;
+        }
+
+        li:hover .vertical-sub-level {
+            background-color: rgb(74, 98, 100);
+            border: rgb(14, 6, 116) solid 1px;
+            display: block;
+            position: absolute;
+            right: 150px;
+            top: 0px;
+        }
+
+        #vertical-nav .vertical-sub-level {
+            background-color: rgba(14, 79, 85, 0.774);
+        }
+
+        #vertical-nav .vertical-sub-level .vertical-sub-level {
+            background-color: rgba(19, 86, 92, 0.671);
+        }
+
+        #vertical-nav .vertical-sub-level .vertical-sub-level .vertical-sub-level{
+            background-color: rgba(19, 86, 92, 0.534);
+        }
+
+        li:hover .vertical-sub-level .vertical-sub-level {
+            display: none;
+        }
+
+        li:hover .vertical-sub-level .vertical-sub-level .vertical-sub-level {
+            display: none;
+        }
+
+        .vertical-sub-level li:hover .vertical-sub-level {
+            display: block;
+        }
+
+        .vertical-sub-level .vertical-sub-level li:hover .vertical-sub-level {
+            display: block;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="vertical-nav">
+        <ul class="vertical-top-level">
+            <li>
+                <a href="#">محصولات &raquo;</a>
+                <ul class="vertical-sub-level">
+                    <li><a href="#">کالای دیجیتال &raquo;</a>
+                        <ul class="vertical-sub-level">
+                            <li><a href="#">لوازم جانبی گوشی &raquo;</a>
+                                <ul class="vertical-sub-level">
+                                    <li><a href="#">کیف و کاور گوشی</a></li>
+                                    <li><a href="#">پاور بانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده گوشی</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">هدفون، هدست، هندزفری</a></li>
+                            <li><a href="#">کامپیوتر و لوازم جانبی</a></li>
+                            <li><a href="#">گوشی موبایل</a></li>
+                            <li><a href="#">دوربین شکاری</a></li>
+                            <li><a href="#">تبلت</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">پوشاک و مد &raquo;</a>
+                        <ul class="vertical-sub-level">
+                            <li><a href="#">مردانه</a></li>
+                            <li><a href="#">زنانه</a></li>
+                            <li><a href="#">دخترانه</a></li>
+                            <li><a href="#">پسرانه</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">لوازم خانگی &raquo;</a>
+                        <ul class="vertical-sub-level">
+                            <li><a href="#">صوتی و تصویری</a></li>
+                            <li><a href="#">فرش ماشینی</a></li>
+                            <li><a href="#">نور و روشنایی</a></li>
+                            <li><a href="#">آشپزخانه</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">کتاب، لوازم تحریر</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">سوپرمارکت &raquo;</a>
+                <ul class="vertical-sub-level">
+                    <li><a href="#">کالای اساسی &raquo;</a>
+                        <ul class="vertical-sub-level">
+                            <li><a href="#">نان</a></li>
+                            <li><a href="#">برنج</a></li>
+                            <li><a href="#">روغن</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">لبنیات</a></li>
+                    <li><a href="#">مواد پروتئینی</a></li>
+                    <li><a href="#">نوشیدنی</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">شگفت انگیزها &raquo;</a>
+                <ul class="vertical-sub-level">
+                    <li><a href="#">فروش ویژه&raquo;</a>
+                        <ul class="vertical-sub-level">
+                            <li><a href="#">پرفروش ترین </a></li>
+                            <li><a href="#"> محبوب ترین</a></li>
+                            <li><a href="#"> بیشترین تخفیف</a></li>
+                            <li><a href="#"> سریع ترین ارسال</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">جوایز </a></li>
+                </ul>
+            </li>
+            <li><a href="#">ورود به حساب کاربری</a></li>
+            <li><a href="#"> ارتباط با ما</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
